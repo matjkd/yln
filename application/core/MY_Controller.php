@@ -7,6 +7,7 @@ class MY_Controller extends CI_Controller {
 
         $this->load->model('admin_model');
         $this->load->library('postmark');
+		$this->lang->load('menus', 'english');
 
         $admindata = $this->admin_model->get_admin(1);
         foreach ($admindata as $row):

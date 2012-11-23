@@ -1,7 +1,7 @@
 
 <ul class="topnav">
-    <li><?= anchor('/', 'Home') ?></li>
-    <li><?= anchor('/about-laworld.html', 'About LAWorld') ?>
+    <li><?= anchor('/', lang('menu_home')) ?></li>
+    <li><?= anchor('/about-laworld.html', lang('menu_about')) ?>
 
         <ul class="subnav">
             <li><?= anchor('/about-laworld/history-of-laworld.html', 'History of Laworld') ?></li>
@@ -12,7 +12,7 @@
               
         </ul>
     </li>
-    <li><a href="#">Membership</a>
+    <li><a href="#"><?=lang('menu_membership')?></a>
     	<ul class="subnav">
             <li><?= anchor('/membership/membership-criteria.html', 'Membership Criteria') ?></li>
             <li><?= anchor('/membership/membership-fee-structure.html', 'Membership Fee Structure') ?></li>
@@ -25,11 +25,11 @@
         </ul>
        
     </li>
-    <li><?= anchor('/find-a-lawyer', 'Find a LAWorld Lawyer') ?>
+    <li><?= anchor('/find-a-lawyer', lang('menu_findMember')) ?>
         
     </li>
 
-    <li><?= anchor('news', 'News') ?>
+    <li><?= anchor('news', lang('menu_news')) ?>
     	<ul class="subnav">
             <li><?= anchor('/newsletters', 'International Legal News') ?></li>
             <li><?= anchor('/events', 'Events Calendar') ?></li>
@@ -38,13 +38,11 @@
         </ul>
     	
     </li>
-     <li><?= anchor('/doing-business-with-china.html', 'Doing Business with China') ?>
-        
-    </li>
+     
     
-    <li><?= anchor('/contact', 'Contact us') ?></li>
+    <li><?= anchor('/contact', lang('menu_contact')) ?></li>
 
- <li><?= anchor('/links.html', 'Links') ?>
+ <li><?= anchor('/links.html', lang('menu_links')) ?>
         
     </li>
 

@@ -32,9 +32,9 @@
 
 		<div id="mainContainer" class="container">
 
-			<div id="header" class="sixteen columns">
-<img id="mainLogo" src="<?=base_url()?>css/laworld-theme/images/logo.png"/>
-			<h2 class="headingTitle">The international legal network</h2>
+		<div id="header" class="sixteen columns">
+<img id="mainLogo" src="<?=base_url()?>css/<?=$this -> config_theme?>/images/logo.png"/>
+			
 
 			</div>
 
