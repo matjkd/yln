@@ -1,0 +1,46 @@
+#chinaMap {
+	display:block;
+	width:920px;
+	height:600px;
+	background:url('images/chinaMap.png') no-repeat;
+	background-size:920px 600px;
+	clear:both;
+	position:relative;
+	
+}
+.regionBullet {
+	background:#800000;
+	height:14px;
+	width:14px;
+	position:absolute;
+	
+}
+.regionBullet p {
+	display:none;
+	padding-left:16px;
+	margin-top:-3px;
+}
+
+.bullethover {
+	background:#D08209;
+}
+
+#mapDialog {
+	display:none;
+	width:350px;
+	height:300px;
+	position:absolute;
+	
+	top:200px;
+	left:0px;
+	background:#fff;
+	-moz-box-shadow: 2px 3px 5px #000000;
+-webkit-box-shadow: 2px 3px 5px #000000;
+box-shadow: 2px 3px 5px #000000;
+}
+#region2 {
+	
+	left:667px;
+	top:224px;
+	
+}

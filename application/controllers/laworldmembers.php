@@ -35,6 +35,13 @@ class Laworldmembers extends MY_Controller {
 		$this -> load -> view('template/main');
 
 	}
+	
+	function ajaxListregion($region_id) {
+		//get all companies from a region
+		$data['regionmembers'] = $this->members_model->list_members_in_region($region_id);
+		$this -> load -> vars($data);
+		$this -> load -> view('ajax/memberlist');
+	}
 
 	/*
 	 *

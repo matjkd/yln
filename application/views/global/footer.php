@@ -28,7 +28,7 @@
   <script src="<?=base_url()?>js/plugins.js"></script>
      <script src="<?=base_url()?>js/jquery.dataTables.min.js"></script>
       <script src="<?=base_url()?>js/script.js"></script>
-
+ <script src="<?=base_url()?>js/chinamap.js"></script>
   <!-- end concatenated and minified scripts-->
   
   
