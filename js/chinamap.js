@@ -1,21 +1,40 @@
+var base_url = $('#baseurl').val();
+
 $(document).ready(function() {
-	
+	var regionID;
 	
 	$(".regionBullet").hover(
   function () {
+  	
+  	 regionID = $(this).attr('id');
+  	 regionID = regionID.replace('region', '');
     $(this).addClass("bullethover");
-    $('p').fadeIn();
+   
+    $("#label" + regionID).stop(true, true).fadeIn();
+    
+    
+   
+    
+    
   },
   function () {
     $(this).removeClass("bullethover");
-     $('p').fadeOut();
+    
+    $("#label" + regionID).stop(true, true).fadeOut('fast');
   }
 );
 
 $(".regionBullet").click(
   function () {
-  		$('#mapDialog').fadeOut();
+  	$('#mapDialog').fadeOut();
   	$('#mapDialog').fadeIn();
+  	
+  	 regionID = $(this).attr('id');
+  	 regionID = regionID.replace('region', '');
+  	
+  	$('#dialogContent').load(base_url + "laworldmembers/ajaxlistregion/" + regionID);
+  	
+  	
   });
 
 

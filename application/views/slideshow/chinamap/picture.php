@@ -1,10 +1,19 @@
 <link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/chinamap.css">
-<div class="memberBox" >
-<div class="fifteen columns " style='float:left'>
-<div style="padding-left:5px;" id="chinaMap">
+
+<div class="mapBox" >
+<div class="" >
+<div style="margin-left:10px;" id="chinaMap">
+	
+	<?php foreach($regions as $row):?>
+		
+		
+		<div id="region<?=$row->region_id?>" class="regionBullet"><p><?=$row->region_name?></p></div>
+		<div id="label<?=$row->region_id?>" class="bulletLabel "> <h2><?=$row->region_name?></h2></div>
+		<?php endforeach; ?>
 	
 	
-	<div id="region2" class="regionBullet"><p>Beijing</p></div>
+	
+	
 	
 <?php foreach($regions as $row): ?>
 	
@@ -19,5 +28,8 @@
 
 <div id="mapDialog">
 	<div class="dialogTopbar"><div class="closeBox">X</div></div>
+	<div id="dialogContent"	>
 		
+		
+	</div>
 </div>

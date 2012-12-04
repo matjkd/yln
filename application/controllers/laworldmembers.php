@@ -42,6 +42,17 @@ class Laworldmembers extends MY_Controller {
 		$this -> load -> vars($data);
 		$this -> load -> view('ajax/memberlist');
 	}
+	
+	function ajaxregion($region_id) {
+		$data['regionmembers'] = $this->members_model->list_members_in_region($region_id);
+			foreach($data['regionmembers'] as $row): 
+	
+			$data['region'] = $row->region_name;
+	
+	 		endforeach; 
+		$this -> load -> vars($data);
+		$this -> load -> view('ajax/region');
+	}
 
 	/*
 	 *

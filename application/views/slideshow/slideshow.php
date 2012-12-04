@@ -10,7 +10,7 @@
        <?php } ?>
        
        <?php if($slideshow_active == NULL) {?>
-       	<?=$this->load->view("/slideshow/mainpage/picture")?>
+       
 <?php } ?>
 <?php } ?>
 </div>

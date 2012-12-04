@@ -100,14 +100,16 @@ p {
 }
 #mainLogo {
 	position: absolute;
-	
+	width:400px;
+	margin-top:0px;
+	margin-left:20px;
 }
 #header {
 
-	height: 120px;
+	height: 130px;
 	
-	margin-bottom: 10px;
-	margin-top: 35px;
+	
+	margin-top: 30px;
 	display: block;
 	position: relative;
 }
@@ -238,13 +240,25 @@ box-shadow: 2px 2px 9px #2c2c2c;
 #menucontainer {
 	position: fixed;
 	z-index: 100000;
-	background: #3e3e3e;
+	top:0;
+	background: #41434E;
+	
 	width: 100%;
-	margin: 0 auto 20px;
-	border-bottom: 3px solid #000;
-	-moz-box-shadow: 0px 4px 11px #242424;
-	-webkit-box-shadow: 0px 4px 11px #242424;
-	box-shadow: 0px 4px 11px #242424;
+	margin: 0 auto 0px;
+	border-bottom: 1px solid #000;
+	
+}
+#logocontainer {
+	position: relative;
+	z-index: 500;
+	background: #4EB7F1;
+	width: 100%;
+	margin: 32px auto 20px;
+	border-top:1px solid  #98D6FF;
+border-bottom: 1px solid #000;
+-moz-box-shadow: 0px 4px 11px #000000;
+	-webkit-box-shadow: 0px 4px 11px #000000;
+	box-shadow: 0px 4px 11px #000000;
 }
 
 .maincontent {
@@ -421,10 +435,10 @@ box-shadow: 2px 2px 9px #2c2c2c;
 	margin-bottom: 12px;
 }
 #section2 {
-	border-top:10px solid #ddd;
+	border-top:10px solid #40485C;
 	padding-top: 5px;
 	font-size: 12px;
-	background: #B2B9BE;
+	background: #161616;
 	min-height: 138px;
 }
 #section2 h2 {

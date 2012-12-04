@@ -30,13 +30,14 @@
 
 		</div>
 
+<div id="logocontainer">
+<div id="header" class="sixteen columns container">
+<img id="mainLogo" src="<?=base_url()?>css/<?=$this -> config_theme?>/images/logo2.png"/>
+</div>
+</div>
 		<div id="mainContainer" class="container">
 
-		<div id="header" class="sixteen columns">
-<img id="mainLogo" src="<?=base_url()?>css/<?=$this -> config_theme?>/images/logo.png"/>
-			
-
-			</div>
+		
 
 <?php if(isset($structure)) {?>
 			<div itemscope itemtype="http://data-vocabulary.org/<?=$structure?>" id="container" >
@@ -81,7 +82,7 @@
 		<div  id="section2">
 			<div class="container">
 				
-				<div class="eight columns"><h2>LAWorld News</h2>
+				<div class="eight columns"><h2>YLN News</h2>
 					<?=$this->load->view('extra/latestNews')?>
 					
 				</div>

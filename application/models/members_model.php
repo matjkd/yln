@@ -80,7 +80,7 @@ class Members_model extends CI_Model {
 	}
 		
 		function list_members_in_region($region_id) {
-			$this -> db -> join('company', 'address.idcompany = company.idcompany', 'LEFT');
+		$this -> db -> join('company', 'address.idcompany = company.idcompany', 'LEFT');
 		$this -> db -> join('regions', 'address.region = regions.region_id', 'LEFT');
 		$this -> db -> where('company.active', 1);
 		$this -> db -> where('regions.region_id', $region_id);
