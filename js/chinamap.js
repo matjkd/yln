@@ -8,6 +8,7 @@ $(document).ready(function() {
   	
   	 regionID = $(this).attr('id');
   	 regionID = regionID.replace('region', '');
+  	 
     $(this).addClass("bullethover");
    
     $("#label" + regionID).stop(true, true).fadeIn();
@@ -31,7 +32,7 @@ $(".regionBullet").click(
   	
   	 regionID = $(this).attr('id');
   	 regionID = regionID.replace('region', '');
-  	
+  	 $("#label" + regionID).stop(true, true).fadeIn();
   	$('#dialogContent').load(base_url + "laworldmembers/ajaxlistregion/" + regionID);
   	
   	

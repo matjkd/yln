@@ -52,8 +52,8 @@ $route['events'] = '/welcome/home';
 $route['find-a-lawyer'] = '/laworldmembers/home';
 $route['view_company/(:num)'] = '/laworldmembers/view_company/$1';
 $route['links.html'] = '/welcome/webroute';
-$route['about-laworld.html'] = '/welcome/webroute';
-$route['about-laworld/(:any)'] = "welcome/webroute";
+$route['about-yln.html'] = '/welcome/webroute';
+$route['about-yln/(:any)'] = "welcome/webroute";
 $route['membership/(:any)'] = "welcome/webroute";
 
 $route['news-and-publications/(:any)'] = "welcome/webroute";

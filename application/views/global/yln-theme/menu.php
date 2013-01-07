@@ -1,30 +1,17 @@
 
 <ul class="topnav">
     <li><?= anchor('/', lang('menu_home')) ?></li>
-    <li><?= anchor('/about-laworld.html', lang('menu_about')) ?>
+    <li><?= anchor('/about-yln.html', lang('menu_about')) ?>
 
         <ul class="subnav">
-            <li><?= anchor('/about-laworld/history-of-laworld.html', 'History of Laworld') ?></li>
-            <li><?= anchor('/about-laworld/expertise.html', 'Expertise') ?></li>
-            <li><?= anchor('/about-laworld/codes-of-practice.html', 'Codes of Practice') ?></li>
-             <li><?= anchor('/about-laworld/aims-and-objectives.html', 'Aims and Objectives') ?></li>
-              <li><?= anchor('/about-laworld/lawyer-exchangescareer-opportunities.html', 'Lawyer Exchanges/Career Opportunities') ?></li>
+           
+            <li><?= anchor('/about-yln/gateway_to_china', lang('menu_gateway')) ?></li>
+           
               
         </ul>
     </li>
-    <li><a href="#"><?=lang('menu_membership')?></a>
-    	<ul class="subnav">
-            <li><?= anchor('/membership/membership-criteria.html', 'Membership Criteria') ?></li>
-            <li><?= anchor('/membership/membership-fee-structure.html', 'Membership Fee Structure') ?></li>
-            <li><?= anchor('/membership/membership-benefits.html', 'Membership Benefits') ?></li>
-             <li><?= anchor('/membership/members-obligations.html', 'Membership Obligations') ?></li>
-              <li><?= anchor('/membership/seeking-new-members.html', 'Seeking New Members') ?></li>
-                <li><?= anchor('/membership/acceptance-procedure.html', 'Acceptance Procedure') ?></li>
-                  <li><?= anchor('/membership/application-form.html', 'Application Form') ?></li>
-              
-        </ul>
-       
-    </li>
+     <li><?= anchor('/events', lang('menu_conferences')) ?></li>
+    
     <li><?= anchor('/find-a-lawyer', lang('menu_findMember')) ?>
         
     </li>
@@ -32,7 +19,6 @@
     <li><?= anchor('news', lang('menu_news')) ?>
     	<ul class="subnav">
             <li><?= anchor('/newsletters', 'International Legal News') ?></li>
-            <li><?= anchor('/events', 'Events Calendar') ?></li>
           
               
         </ul>
