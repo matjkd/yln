@@ -33,6 +33,15 @@ class Members_model extends CI_Model {
 		}
 	}
 	
+	function get_region($region_id) {
+
+		$this -> db -> where('region_id', $region_id);
+		$query = $this -> db -> get('regions');
+		if ($query -> num_rows == 1) {
+			return $query -> result();
+		}
+	}
+	
 	function get_random_member() {
 
 		
@@ -93,6 +102,19 @@ class Members_model extends CI_Model {
 	
 	function list_regions() {
 		$this -> db -> order_by('order');
+		$query = $this -> db -> get('regions');
+		
+		if ($query -> num_rows > 0) {
+			return $query -> result();
+		}
+	}
+	function list_populated_regions() {
+		$this -> db -> order_by('regions.order');
+		
+		$this -> db -> join('address', 'address.region = regions.region_id', 'BOTH');
+		$this->db->join('company', 'company.idcompany = address.idcompany');
+		$this->db->where('company.active', 1);
+		$this -> db ->group_by('regions.region_id');
 		$query = $this -> db -> get('regions');
 		if ($query -> num_rows > 0) {
 			return $query -> result();

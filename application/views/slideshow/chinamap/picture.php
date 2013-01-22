@@ -2,7 +2,7 @@
 
 <div class="mapBox" >
 <div class="" >
-<div style="margin-left:10px;" id="chinaMap">
+<div style="margin-left:auto; margin-right:auto" id="chinaMap">
 	
 	<?php foreach($regions as $row):?>
 		
@@ -27,8 +27,12 @@
 
 
 <div id="mapDialog">
-	<div class="dialogTopbar"><div class="closeBox">X</div></div>
+	<div class="dialogTopbar">
+	
+	<div class="closeBox"></div>
+	</div>
 	<div id="dialogContent"	>
+		
 		
 		
 	</div>

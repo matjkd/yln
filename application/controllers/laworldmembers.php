@@ -22,7 +22,7 @@ class Laworldmembers extends MY_Controller {
 		$data['captcha'] = $this -> captcha_model -> initiate_captcha();
 
 		$data['sidebar'] = "sidebox/side";
-		$data['regions'] = $this->members_model->list_regions();
+		$data['regions'] = $this->members_model->list_populated_regions();
 		
 		$data['main_content'] = "global/" . $this -> config_theme . "/content";
 		//$data['cats'] = $this->products_model->get_cats();
@@ -39,6 +39,7 @@ class Laworldmembers extends MY_Controller {
 	function ajaxListregion($region_id) {
 		//get all companies from a region
 		$data['regionmembers'] = $this->members_model->list_members_in_region($region_id);
+		$data['region'] = $this->members_model->get_region($region_id);
 		$this -> load -> vars($data);
 		$this -> load -> view('ajax/memberlist');
 	}
@@ -132,6 +133,7 @@ class Laworldmembers extends MY_Controller {
 			$data['sidebox'] = $row -> sidebox;
 			$data['metatitle'] = $row -> meta_title;
 			$data['slideshow_active'] = $row -> slideshow;
+			   $data['hero_active'] = $row->hero;
 			$data['meta_keywords'] = $row -> meta_keywords;
 			$data['meta_description'] = $row -> meta_desc;
 			$data['slideshow'] = $row -> slideshow;

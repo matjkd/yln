@@ -32,6 +32,7 @@
                $data['sidebox'] = $row->sidebox;
                $data['metatitle'] = $row->meta_title;
                $data['slideshow_active'] = $row->slideshow;
+			    $data['hero_active'] = $row->hero;
                $data['meta_keywords'] = $row->meta_keywords;
                $data['meta_description'] = $row->meta_desc;
                $data['slideshow'] = $row->slideshow;

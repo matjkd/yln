@@ -27,11 +27,13 @@ $(document).ready(function() {
 
 $(".regionBullet").click(
   function () {
-  	$('#mapDialog').fadeOut();
-  	$('#mapDialog').fadeIn();
+  	$(".regionBullet").removeClass("bullethover2");
+  	$('#mapDialog').stop().fadeOut();
+  	$('#mapDialog').stop().fadeIn();
   	
   	 regionID = $(this).attr('id');
   	 regionID = regionID.replace('region', '');
+  	 $("#region" + regionID).addClass("bullethover2");
   	 $("#label" + regionID).stop(true, true).fadeIn();
   	$('#dialogContent').load(base_url + "laworldmembers/ajaxlistregion/" + regionID);
   	
@@ -42,6 +44,7 @@ $(".regionBullet").click(
 $(".closeBox").click(
   function () {
   		$('#mapDialog').fadeOut();
+  		$(".regionBullet").removeClass("bullethover2");
   
   });
 

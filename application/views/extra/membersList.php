@@ -38,8 +38,9 @@ if($value[0] != $alphabet){
 	
 		?>
 	</ul>
+	<div class="regions regionHeading"><h4 ><?=$value[0]?></h4></div>
 	<ul class="regionList"  id ="letter<?=$value[0]?>">
-	<li class="regions regionHeading" ><h4 ><?=$value[0]?></h4></li>
+	
 	<?php } else {
 		
 	}?>
