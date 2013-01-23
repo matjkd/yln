@@ -1,8 +1,19 @@
 <link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/chinamap.css">
 
 <div class="mapBox" >
+	<div class="span4" style="float:left; margin-left:0px;  ">
+	<div  style=" background:rgba(0, 133, 255, 0.5); margin-left:0px; position:absolute; z-index:99999; ">
+		<?php foreach($regions as $row):?>
+		<?=$row->region_name?><br/>
+		<?php endforeach;?>
+		</div>	
+
+	</div>
+	
 <div class="" >
 <div style="margin-left:auto; margin-right:auto" id="chinaMap">
+	
+	
 	
 	<?php foreach($regions as $row):?>
 		

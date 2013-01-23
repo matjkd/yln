@@ -5,7 +5,7 @@ $datestring = "%l %j%S %M  %Y %G:%i:%s";
 
 ?>
 <div>
-    
+    <h1><?=$this->load->view('global/bootstrap/title')?></h1>
 
         <?php
         foreach ($content as $row):

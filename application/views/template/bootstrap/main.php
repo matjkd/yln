@@ -14,8 +14,9 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57-precomposed.png"/>
     <title>About Us Page</title>
-    <link href="<?=base_url()?>css/bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link href="<?=base_url()?>css/bootstrap/bootstrap.css" type="text/css" rel="stylesheet"/>
     <link href="<?=base_url()?>css/bootstrap/style.css" type="text/css" rel="stylesheet"/>
+        <link href="<?=base_url()?>css/bootstrap/custom.css" type="text/css" rel="stylesheet"/>
     <link href="<?=base_url()?>css/bootstrap/prettyPhoto.css" type="text/css" rel="stylesheet"/>
     <link href="<?=base_url()?>css/bootstrap/font-icomoon.css" type="text/css" rel="stylesheet"/>
     <link href="<?=base_url()?>css/bootstrap/font-awesome.css" type="text/css" rel="stylesheet"/>
@@ -95,20 +96,7 @@
     	
                     <?= $this->load->view('slideshow/hero') ?>
         
-<!--page title-->
-<section class="title">
     
-        <div class="page-header">
-            <div class="row">
-                <div class="span8">
-                    <h1> <?= $this->load->view('global/' . $this -> config_theme . '/title') ?></h1>
-                   
-                </div>
-                
-            </div>
-        </div>
-    
-</section>       
         <?php 
 		$col1 = "6";
 		$col2 = "6";
