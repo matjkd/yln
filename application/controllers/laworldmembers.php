@@ -23,6 +23,7 @@ class Laworldmembers extends MY_Controller {
 
 		$data['sidebar'] = "sidebox/side";
 		$data['regions'] = $this->members_model->list_populated_regions();
+		$data['companies'] = $this->members_model->list_members();
 		
 		$data['main_content'] = "global/" . $this -> config_theme . "/content";
 		//$data['cats'] = $this->products_model->get_cats();
@@ -70,6 +71,7 @@ class Laworldmembers extends MY_Controller {
 		$data['keypeople'] = $this-> members_model ->list_keypeople ($company_id);
 		
 		$data['addressInfo'] = $this -> members_model -> list_addresses ($company_id);
+		$data['econProfile'] = $this->members_model->get_economicProfiles($company_id);
 		$data['menu'] = 'view_company';
 		$this -> get_content_data($data['menu']);
 		

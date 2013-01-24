@@ -59,11 +59,49 @@ class Members_model extends CI_Model {
 		$this -> db -> where('active', 1);
 		$this -> db -> order_by('company_name');
 		$this -> db -> join('address', 'address.idcompany = company.idcompany', 'LEFT');
-		$this->db -> group_by('company_name');
+		//$this->db -> group_by('company_name');
 		$query = $this -> db -> get('company');
 		if ($query -> num_rows > 0) {
 			return $query -> result();
 		}
+	}
+	
+	function get_economicProfiles($firmID) {
+		
+		$addresses = $this->list_addresses($firmID);
+		$profiles = array();
+		
+		//get matching cities
+		foreach($addresses as $row):
+			
+			$this->db->where('profile_city', $row->city);
+			
+			
+			$this -> db -> join('regions', 'profile_region = regions.region_id', 'LEFT');
+			$query = $this->db->get('economicProfile');
+			if ($query -> num_rows > 0) {
+			$temp = $query->result();
+			$profiles = array_merge((array)$temp, (array)$profiles);
+			}
+		endforeach;
+		
+		//get matching cities
+		foreach($addresses as $row):
+			
+			$this->db->where('profile_city', '');
+			$this->db->where('profile_region', $row->region);
+			
+			$this -> db -> join('regions', 'profile_region = regions.region_id', 'LEFT');
+			$query2 = $this->db->get('economicProfile');
+			
+			if ($query2 -> num_rows > 0) {
+			$temp = $query2->result();
+			$profiles = array_merge((array)$temp, (array)$profiles);
+			}
+		endforeach;
+		
+			return $profiles;
+		
 	}
 
 	function list_keypeople($member_id) {

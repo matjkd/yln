@@ -1,7 +1,30 @@
 var base_url = $('#baseurl').val();
+var accordionHeight = $('#accordion2').height();
+var imageresize = accordionHeight + 20;
+
+function resizeImage() {
+	
+	
+	setTimeout(function() {
+		accordionHeight = $('#accordion2').height();
+		imageresize = accordionHeight + 20;
+	
+	$('#chinaMap').animate({
+    	height: imageresize
+  });
+	}, 500);
+	
+	
+};
 
 $(document).ready(function() {
 	var regionID;
+	
+	
+   resizeImage();
+
+	
+
 	
 	$(".regionBullet").hover(
   function () {
@@ -21,7 +44,7 @@ $(document).ready(function() {
   function () {
     $(this).removeClass("bullethover");
     
-    $("#label" + regionID).stop(true, true).fadeOut('fast');
+   
   }
 );
 
@@ -34,12 +57,28 @@ $(".regionBullet").click(
   	 regionID = $(this).attr('id');
   	 regionID = regionID.replace('region', '');
   	 $("#region" + regionID).addClass("bullethover2");
-  	 $("#label" + regionID).stop(true, true).fadeIn();
-  	$('#dialogContent').load(base_url + "laworldmembers/ajaxlistregion/" + regionID);
+  	
+  	resizeImage();
   	
   	
   });
-
+  
+  
+$(".accordion-heading").click(
+  function () {
+  	$(".regionBullet").removeClass("bullethover2");
+  	
+  	
+  	 regionID = $(this).attr('id');
+  	 regionID = regionID.replace('regionHeading', '');
+  	 $("#region" + regionID).addClass("bullethover2");
+  	 $("#label" + regionID).stop(true, true).fadeIn();
+  
+  resizeImage();
+  	
+  	
+  	
+  });
 
 $(".closeBox").click(
   function () {

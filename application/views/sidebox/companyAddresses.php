@@ -9,7 +9,8 @@
 	
 	<?=$row->city?><br/>
 	<?php if($row->address4 != NULL){?><?=$row->address4?><br/><?php } ?>
-	<?=$row->country?><br/>
+	<?php if($row->country != NULL){?><?=$row->country?><br/><?php } ?>
+	<?=$row->region_name?>
 	<br/>
 	<?php if($row->tel != NULL){?>tel: <?=$row->tel?><br/><?php } ?>
 		<?php if($row->fax != NULL){?>fax: <?=$row->fax?><br/><?php } ?>
