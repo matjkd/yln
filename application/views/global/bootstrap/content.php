@@ -4,11 +4,32 @@ $datestring = "%l %j%S %M  %Y %G:%i:%s";
 
 
 ?>
-<div>
-    <h1><?=$this->load->view('global/bootstrap/title')?></h1>
+<div style=" ">
+    <?php foreach ($content as $row):
+	$unix = $row->date_added;
+			$timeTrim = mdate($datestring, $unix);
+			$added_by = $row->added_by;
+	 $added_by = $row->added_by;
+	 if($row->added_by == 'Jacqui Nash') { $added_by = "Admin";}
+			if($row->added_by == '64' || $row->added_by == '62' ){ $added_by = "Admin";}
+			if($row->added_by == '65') { $added_by = "Admin";}
+	
+	 ?>
+        <!--add image if set-->
+
+        <h2><?= $row->title ?></h2>
+        
+        <?php if(isset($hideDate) && $hideDate == 1) { } else { ?>
+<em><?=$timeTrim ?> | by <?=$added_by?></em><br/>
+<?php } ?>
+        <?php
+        $is_logged_in = $this->session->userdata('is_logged_in');
+        if (!isset($is_logged_in) || $is_logged_in == true) {
+            echo "<a href='" . base_url() . "admin/edit/" . $row->content_id . "'>edit this page</a>";
+        }
+        ?>
 
         <?php
-        foreach ($content as $row):
         if (isset($age)) {
             $body = str_replace("[age]", "$age", "$row->content");
         } else {

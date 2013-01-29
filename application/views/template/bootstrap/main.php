@@ -28,6 +28,7 @@
 
 <body>
 	<input type="hidden" id="baseurl" value="<?= base_url() ?>"/>
+		 <?php $this->datestring = "%l %j%S %M  %Y %G:%i:%s";?>
 <!--top menu-->
 <section id="top-menu">
     <div class="container">

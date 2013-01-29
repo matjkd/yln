@@ -15,7 +15,7 @@
 			 <div class="accordion-group">
                             <div class="accordion-heading" id="regionHeading<?=$row->region_id?>">
                                 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse<?=$x?>">
-                                    <i class="icon-minus icon-white"></i>
+                                    <i class="icon-plus icon-white"></i>
                                   <?=$row->region_name?><br/>
                                 </a>
                             </div>

@@ -103,7 +103,7 @@ class Admin extends MY_Controller {
 				 $menuLinkvalue = $row->menu;
 				 endforeach;
 				 //$this->session->set_flashdata('message', 'Content Updated');
-                redirect('welcome/home/'. $menuLinkvalue);   // or whatever logic needs to occur
+              redirect('welcome/home/'. $menuLinkvalue);   // or whatever logic needs to occur
           
         }
     }

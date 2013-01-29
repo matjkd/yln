@@ -4,7 +4,7 @@
  		$x = 0;
 		$oldyear = 0;
  ?>
-<?php foreach($oldNews as $row1):?>
+<?php if($oldNews != NULL) { foreach($oldNews as $row1):?>
 	<?php $unix1 = $row1->date_added;
 			
 	$year1= mdate($datestringYear, $unix1); ?>
@@ -42,4 +42,4 @@
 			
 			
 		<?php $oldyear = $year1;?>	
-		<?php endforeach;?>
+		<?php endforeach; }?>
