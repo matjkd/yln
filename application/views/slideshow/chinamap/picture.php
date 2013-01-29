@@ -45,7 +45,7 @@
 	</div>
 	
 
-<div style="margin-left:auto; margin-right:auto" class="visible-desktop" id="chinaMap">
+<div style="margin-left:auto; margin-right:0px" class="visible-desktop" id="chinaMap">
 	
 	
 	

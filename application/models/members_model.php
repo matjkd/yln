@@ -47,7 +47,8 @@ class Members_model extends CI_Model {
 		
 		$this->db->limit(1);
 		$this -> db -> where('active', 1);
-			$this -> db -> join('address', 'address.idcompany = company.idcompany', 'LEFT');
+		$this -> db -> join('address', 'address.idcompany = company.idcompany', 'LEFT');
+		$this -> db -> join('regions', 'regions.region_id = address.region', 'LEFT');
 		$this->db->order_by('company.idcompany', 'random');
 		$query = $this -> db -> get('company');
 		if ($query -> num_rows == 1) {
