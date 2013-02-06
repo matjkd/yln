@@ -1,9 +1,9 @@
 #chinaMap {
 	display:block;
-	width:920px;
+	width:820px;
 	height:600px;
-	background:url('images/chinaMapwhite.png') no-repeat;
-	background-size:920px 600px;
+	background:url('images/chinaMapgreen.png') no-repeat;
+	background-size:820px 600px;
 	clear:both;
 	position:relative;
 	
@@ -60,7 +60,7 @@ margin-left:-6px;
 }
 
 .bullethover2 {
-	background:#D08209;
+	background:rgb(255, 216, 58);
 	height:22px;
 	width:22px;
 	-moz-border-radius:11px;
@@ -69,7 +69,22 @@ border-radius:11px;
 margin-top: -6px;
 margin-left:-6px;
 }
-
+.bullethover3 {
+	background:rgb(201, 255, 87);
+	height:22px;
+	width:22px;
+	-moz-border-radius:11px;
+-webkit-border-radius: 11px;
+border-radius:11px;
+margin-top: -6px;
+margin-left:-6px;
+}
+.regionHeadingHover {
+	background:rgb(40, 112, 190);
+}
+.regionHeadingClicked {
+	background:rgb(40, 112, 190);
+}
 #mapDialog {
 	display:none;
 	width:350px;
@@ -103,44 +118,44 @@ cursor: pointer;
 
 
 #region1 {  left:30px;	top:575px;	}
-#region2 { 	left:667px;	top:224px;	}
-#region3 { 	left:683px;	top:239px;	}
-#region4 { 	left:653px;	top:244px;	}
-#region5 { 	left:602px;	top:268px;	}
-#region6 { 	left:502px;	top:217px;	}
+#region2 { 	left:592px;	top:224px;	}
+#region3 { 	left:606px;	top:239px;	}
+#region4 { 	left:573px;	top:244px;	}
+#region5 { 	left:532px;	top:268px;	}
+#region6 { 	left:432px;	top:217px;	}
 
-#region7 { 	left:764px;	top:191px;	}
-#region8 { 	left:813px;	top:156px;	}
-#region9 { 	left:822px;	top:97px;	}
-#region10 { left:767px;	top:363px;	}
-#region11 { left:732px;	top:330px;	}
+#region7 { 	left:687px;	top:191px;	}
+#region8 { 	left:723px;	top:156px;	}
+#region9 { 	left:732px;	top:97px;	}
+#region10 { left:683px;	top:363px;	}
+#region11 { left:652px;	top:330px;	}
 
-#region12 { left:746px;	top:395px;	}
-#region13 { left:693px;	top:361px;	}
-#region14 { left:716px;	top:449px;	}
-#region15 { left:669px;	top:424px;	}
-#region16 { left:693px;	top:284px;	}
-#region17 { left:624px;	top:326px;	}
+#region12 { left:666px;	top:395px;	}
+#region13 { left:623px;	top:361px;	}
+#region14 { left:646px;	top:449px;	}
+#region15 { left:599px;	top:424px;	}
+#region16 { left:633px;	top:284px;	}
+#region17 { left:554px;	top:326px;	}
 
-#region18 { left:601px;	top:372px;	}
-#region19 { left:594px;	top:428px;	}
-#region20 { left:635px;	top:494px;	}
-#region21 { left:551px;	top:489px;	}
-#region22 { left:560px;	top:571px;	}
-#region23 { left:528px;	top:393px;	}
-#region24 { left:434px;	top:375px;	}
-#region25 { left:503px;	top:442px;	}
-#region26 { left:408px;	top:476px;	}
-#region27 { left:175px;	top:340px;	}
-#region28 { left:542px;	top:325px;	}
-#region29 { left:468px;	top:303px;	}
-#region30 { left:338px;	top:286px;	}
+#region18 { left:521px;	top:372px;	}
+#region19 { left:524px;	top:428px;	}
+#region20 { left:565px;	top:494px;	}
+#region21 { left:501px;	top:489px;	}
+#region22 { left:506px;	top:571px;	}
+#region23 { left:468px;	top:393px;	}
+#region24 { left:364px;	top:375px;	}
+#region25 { left:453px;	top:442px;	}
+#region26 { left:338px;	top:476px;	}
+#region27 { left:105px;	top:340px;	}
+#region28 { left:472px;	top:325px;	}
+#region29 { left:418px;	top:303px;	}
+#region30 { left:268px;	top:286px;	}
 
-#region31 { left:501px;	top:270px;	}
-#region32 { left:184px;	top:173px;	}
-#region33 { left:665px;	top:525px;	}
-#region34 { left:629px;	top:527px;	}
-#region35 { left:775px;	top:477px;	}
+#region31 { left:451px;	top:270px;	}
+#region32 { left:154px;	top:173px;	}
+#region33 { left:576px;	top:525px;	}
+#region34 { left:559px;	top:527px;	}
+#region35 { left:695px;	top:477px;	}
 
 
 

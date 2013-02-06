@@ -1,5 +1,5 @@
 
-<ul>
+
     <li><?= anchor('/', lang('menu_home')) ?></li>
     <li><?= anchor('/about-yln.html', lang('menu_about')) ?>
 
@@ -14,15 +14,6 @@
     
     <li><?= anchor('/find-a-lawyer', lang('menu_findMember')) ?>
         
-    </li>
-
-    <li><?= anchor('news', lang('menu_news')) ?>
-    	<ul class="subnav">
-            <li><?= anchor('/newsletters', 'International Legal News') ?></li>
-          
-              
-        </ul>
-    	
     </li>
      
     
@@ -43,5 +34,4 @@
     }
     ?>
 
-</ul>
 

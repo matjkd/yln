@@ -1,5 +1,5 @@
 <div id= "featured" >
-<h2>Address</h2>
+<h3  class="widget-title" style="margin-top:0px;">Address</h3>
 <?php if($addressInfo != NULL) { foreach($addressInfo as $row): ?>
 	
 	<strong ><?=$row->city?> office</strong><br/>
@@ -18,7 +18,7 @@
 	<?php endforeach; } ?>
 	</div>
 <div id= "featured" >
-<h2>Contacts</h2>
+<h3  class="widget-title">Contacts</h3>
 
 <?php if($keypeople != NULL) { foreach($keypeople as $row): ?>
 	<strong><a href="<?=base_url()?>laworldmembers/view_profile/<?=$row->idkeypeople?> "><?=$row->firstname?> <?=$row->lastname?></a></strong>

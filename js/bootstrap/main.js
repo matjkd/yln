@@ -121,10 +121,10 @@ $(window).load(function() {
 	// Slider
     $("#mainslider").flexslider({
 		animation: "slide",
-        slideshow: false, // ***
+        slideshow: true, // ***
         useCSS: false,
 		controlNav: true,
-		animationLoop: false,
+		animationLoop: true,
 		smoothHeight: true
 	});
     // Accordion settings

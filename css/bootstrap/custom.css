@@ -2,6 +2,7 @@
   padding: 10px;
 font-size: 14px;
 line-height:20px;
+background:transparent;
 }
 .hero-unit h1 {
   
@@ -15,6 +16,20 @@ line-height: 20px;
 
 .mapAccordion {
 	background:rgba(0, 133, 255, 0.5); margin-left:0px; position:absolute; z-index:99999;
+}
+
+
+.memberBox {
+	color:#ddd;	
+}
+.memberBox h1 a {
+	color:#ddd;
+}
+.memberBox h2{
+	color:#ddd;	
+}
+.memberBox h3{
+	color:#ddd;	
 }
 
 @media (max-width: 979px) {

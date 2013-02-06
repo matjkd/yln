@@ -52,7 +52,7 @@ foreach($events as $key2 =>$row2):
 			
 			<p>
 <h5><a href="<?=base_url()?>welcome/view_event/<?=$row->event_id?>"><?=$row->event_title?>(<?=$row->location_title?>)</a></h5>
-<em>Starts:</em> <?=$startdate?> <br/> <em>Ends:</em> <?=$enddate?>
+
 </p>
 
 </div>

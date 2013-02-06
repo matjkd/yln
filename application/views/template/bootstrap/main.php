@@ -38,9 +38,9 @@
             </div>
             <div class="span9">
                <nav id="menu" class="clearfix pull-right">
-                   
+                   <ul>
                    <?= $this->load->view('global/' . $this -> config_theme . '/menu') ?>
-                   
+                   </ul>
                 </nav>
             </div>
         </div>
@@ -51,7 +51,7 @@
     <div class="container">
         <div class="row">
             <div class="span4 logo">
-                <a class="logo-img" href="./index.html" title="responsive template"><img src="<?=base_url()?>css/yln-theme/images/logo2.png" alt="Tabulate"></a>
+                <a class="logo-img" href="./index.html" title="responsive template"><img src="<?=base_url()?>css/bootstrap/images/logo3.png" alt="Tabulate"></a>
             </div>
             <div class="span4">
               
@@ -115,7 +115,7 @@
             	
                 <section class="popular-posts">
                     <?php if(isset($sidebox) && $sidebox != NULL) { ?>
-                    	<div class="well bg-color-blue fg-color-lighten">
+                    	<div class="well bg-color-gray-light fg-color-gray-dark">
                   
 					<?=$this -> load -> view('sidebox/' . $sidebox) ?>
 					</div>
@@ -160,11 +160,7 @@
             <div class="span4">
                 <p class="heading">YLN</p>
                 <ul class="footer-navigate">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./portfolio4.html">Portfolio</a></li>
-                    <li><a href="./blog-sidebar-right.html">Blog</a></li>
-                    <li><a href="./services.html">Service</a></li>
+                    <?= $this->load->view('global/' . $this -> config_theme . '/menu') ?>
                 </ul>
             </div>
         </div>
