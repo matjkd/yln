@@ -952,11 +952,11 @@ textarea.error {border: 1px solid #b94a48;}
 .color2 {color: #02243C;}
 
 ul.icons {list-style: none; margin-left: 0;}
-ul.ul-list li {background: url('../images/ul-list.png') no-repeat 0 7px; padding-left: 15px;}
+ul.ul-list li {background: url('') no-repeat 0 7px; padding-left: 15px;}
 ul.ul-list li a {display: block;}
-ul.ul-list-2 li {background: url('../images/ul-list-2.png') no-repeat 0 7px; padding-left: 15px;}
+ul.ul-list-2 li {background: url('') no-repeat 0 7px; padding-left: 15px;}
 ul.ul-list-2 li a {display: block;}
-ul.ul-list-3 li {background: url('../images/ul-list-3.png') no-repeat 0 7px; padding-left: 15px;}
+ul.ul-list-3 li {background: url('') no-repeat 0 7px; padding-left: 15px;}
 ul.ul-list-3 li a {display: block;}
 div.spacer {height: 50px;}
 hr {

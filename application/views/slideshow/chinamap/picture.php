@@ -5,7 +5,7 @@
 
 <link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/chinamap.css">
 
-	
+	<div class="heroMap">
 	<div class="mapAccordion"  style="  ">
 		 
                     <div class="accordion" id="accordion2">
@@ -62,6 +62,8 @@
 	
 	
 	
+
+</div>
 
 </div>
 

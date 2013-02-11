@@ -8,6 +8,15 @@
 	position:relative;
 	
 }
+
+.heroMap {
+	margin-right:10px;
+	width:100%;
+	height:100%;
+	background:url('images/chinaMapBackground.jpg') no-repeat;
+background-position:right top;
+background-size:1298px 900px;
+}
 .regionBullet {
 	background:#000033;
 	height:12px;
@@ -49,7 +58,7 @@ box-shadow: 2px 3px 5px #000000;
 }
 
 .bullethover {
-	background:#D08209;
+	background:#BD362F;
 	height:22px;
 	width:22px;
 	-moz-border-radius:11px;
@@ -60,7 +69,7 @@ margin-left:-6px;
 }
 
 .bullethover2 {
-	background:rgb(255, 216, 58);
+background:#A9302A;
 	height:22px;
 	width:22px;
 	-moz-border-radius:11px;
@@ -70,7 +79,7 @@ margin-top: -6px;
 margin-left:-6px;
 }
 .bullethover3 {
-	background:rgb(201, 255, 87);
+	background:rgb(255, 216, 58);
 	height:22px;
 	width:22px;
 	-moz-border-radius:11px;

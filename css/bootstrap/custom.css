@@ -1,8 +1,9 @@
 .hero-unit {
-  padding: 10px;
+  padding: 10px 0;
 font-size: 14px;
 line-height:20px;
-background:transparent;
+background-color:transparent;
+
 }
 .hero-unit h1 {
   

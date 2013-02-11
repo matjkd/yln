@@ -51,15 +51,15 @@
     <div class="container">
         <div class="row">
             <div class="span4 logo">
-                <a class="logo-img" href="./index.html" title="responsive template"><img src="<?=base_url()?>css/bootstrap/images/logo3.png" alt="Tabulate"></a>
+                <a class="logo-img" href="<?=base_url()?>" title="YLN"><img src="<?=base_url()?>css/bootstrap/images/logo3.png" alt="Tabulate"></a>
             </div>
             <div class="span4">
               
             </div>
             <div class="span4 hidden-phone">
                     <section class="search clearfix">
-                        <form id="search" class="input-append">
-                            <input class="span4" id="appendedInputButton" size="16" type="text" value="Search..." name="search site"
+                        <form id="search" class="input-append" method="post" action="<?=base_url()?>search/results">
+                            <input class="span4" id="appendedInputButton" size="16" type="text" value="Search..." name="search"
                                    onfocus="if(this.value=='Search...') this.value=''" onblur="if(this.value=='') this.value='Search...'"/>
                             <input class="btn search-bt" type="submit" name="submit" value="" />
                         </form>
@@ -101,10 +101,12 @@
         <?php 
 		$col1 = "6";
 		$col2 = "6";
+		
 		if(isset($column1) && $column1 != NULL) { $col1 =  $column1; }
 		
 		if(isset($column2) && $column2 != NULL) { $col2 =  $column2; }
 		if(!isset($sidebox) || $sidebox == NULL) { $col1 = '8'; $col2 = '4';}
+		
 		?>
         <div class="row">
             <section id="page" class="pull-left span<?=$col1?>">
@@ -131,7 +133,7 @@
     <div class="container">
         <div class="row">
             <div class="span4">
-                <p><img src="example/logo-button.png" alt=""></p>
+                <p>Yangtzejiang Lawyers Network</p>
                 <address>
                     <p><i class="icon-map-marker"></i> Street Name 432/2, London, 90210</p>
                     <p><i class="icon-phone"></i> (123) 456-7890</p>
@@ -149,13 +151,10 @@
             </div>
             <div class="span4">
                 <p class="heading">About Us</p>
-                <p>Curabitur suscipit ultricies metus quis scelerisque. Quisque eget enim orci. Cras sagittis volutpat auctor. </p>
-                <p class="heading">Subscribe</p>
-                <p>Keep updated with our news. Your email is safe with us!</p>
-                <div class="input-append">
-                    <input type="text" placeholder="Enter Email Address" class="span2"/>
-                    <button type="button" class="btn btn-inverse">Subscribe!</button>
-                </div>
+                <p>The Yantzejiang Legal Network has 26 Chinese independent mid-sized law firm members throughout China with more
+                	 than 860 lawyers providing a full range of legal services to satisfy the diverse needs of 
+                	 their international and domestic clients.  </p>
+                
             </div>
             <div class="span4">
                 <p class="heading">YLN</p>
