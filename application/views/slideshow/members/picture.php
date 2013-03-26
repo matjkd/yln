@@ -41,7 +41,7 @@ foreach($addressInfo as $row):
 	
 	<?php $last_region = $row->region?>
 	<?php endforeach; ?>
-	
+	<div><a  style="color:rgb(133, 133, 133);" href="http://<?=$webaddress?>" target="_blank">visit website</a></div>
 	
 
 	</div>

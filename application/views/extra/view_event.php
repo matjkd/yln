@@ -21,11 +21,11 @@ if(now() < $start){  ?>
 
  <?php } ?>
 <p>
-<h3><a href="<?=base_url()?>frontend/view_event/<?=$row->event_id?>"><?=$row->event_title?>(<?=$row->location_title?>)</a></h3>
+<h3><?=$row->event_title?>(<?=$row->location_title?>)</h3>
 
 
-<em>Hosted by <?=$row->hosted_by_company?></em><br/><br/>
-Location  <?=$row->location_title?>
+
+Location:  <?=$row->location_title?>
 </p>
 </div>
 <?php endforeach ?>

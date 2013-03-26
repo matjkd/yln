@@ -93,7 +93,9 @@ if($content != NULL )  {
 <?php if($galleryImages != NULL) { foreach($galleryImages as $row):?>
 	
         <li id="gallery_<?=$row->content_id?>">
+        	<a href="https://s3-eu-west-1.amazonaws.com/<?=$this->bucket?>/gallery/<?=$row->news_image?>" data-rel="prettyPhoto" rel="prettyPhoto">
 <img  class="thumbnails"  style="width:<?=$imageWidth?>; height: <?=$imageHeight?>" alt="<?=$row->title?>" src="https://s3-eu-west-1.amazonaws.com/<?=$this->bucket?>/gallery/thumbs/thumb_<?=$row->news_image?>" rel="#img_<?=$row->content_id?>"/>
+      </a>
         </li>
 <?php endforeach;  }?>
 </ul>

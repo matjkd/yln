@@ -21,7 +21,7 @@
 <h3  class="widget-title">Contacts</h3>
 
 <?php if($keypeople != NULL) { foreach($keypeople as $row): ?>
-	<strong><a href="<?=base_url()?>laworldmembers/view_profile/<?=$row->idkeypeople?> "><?=$row->firstname?> <?=$row->lastname?></a></strong>
+	<strong><?=$row->firstname?> <?=$row->lastname?></strong>
 	
 	<?php if($row->jobtitle != NULL){?> (<?=$row->jobtitle?>)<?php } ?>
 	<br/>

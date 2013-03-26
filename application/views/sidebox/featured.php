@@ -23,7 +23,7 @@
 		?>
 <p>
 	<?=$row->region_name?>
-<?=$descriptionTrim?>
+
 	</p>
 	<a href="http://<?=$row->company_web?>"><?=$row->company_web?></a>
                         </div>

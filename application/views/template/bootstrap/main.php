@@ -67,15 +67,14 @@
                 </div>
         </div>
     </div>
-</header>
-<!--page header / breadcrumbs-->
+    <!--page header / breadcrumbs-->
 <section class="breadcrumbs">
     <div class="container">
     	 <div class="page-header">
             <div class="row">
                 <div class="span8">
                    
-                    <div><a href="#">Home</a> &nbsp;&rsaquo;&nbsp; About Us</div>
+                    <div><a href="<?=base_url()?>">Home</a> &nbsp;&rsaquo;&nbsp; <?=$title?></div>
                 </div>
                 <div class="span4 hidden-phone">
                   
@@ -84,6 +83,8 @@
         </div>
     </div>
 </section>
+</header>
+
 
 <!--slideshow-->
 
@@ -115,9 +116,18 @@
 
             <aside id="sidebar" class="pull-right span<?=$col2?>">
             	
+            
+            	
                 <section class="popular-posts">
                     <?php if(isset($sidebox) && $sidebox != NULL) { ?>
-                    	<div class="well bg-color-gray-light fg-color-gray-dark">
+                    	<div class="well ">
+                    		<a style="float: left;
+margin-right: 10px; width:150px;" href="http://www.laworld.com" target="_blank"><img src="<?=base_url()?>images/logo.png"/></a>
+                    		<p>YLN is closely affiliated to <a href="http://www.laworld.com" target="_blank">LAWorld</a>, an independent international legal network</p>
+                    		</div>
+                    	
+                    	
+                    	<div class="well">
                   
 					<?=$this -> load -> view('sidebox/' . $sidebox) ?>
 					</div>

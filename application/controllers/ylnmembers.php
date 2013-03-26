@@ -23,7 +23,7 @@ class Ylnmembers extends MY_Controller {
 
 		$data['sidebar'] = "sidebox/side";
 		$data['regions'] = $this->members_model->list_populated_regions();
-		$data['companies'] = $this->members_model->list_members();
+		$data['companies'] = $this->members_model->list_members_main();
 		
 		$data['main_content'] = "global/" . $this -> config_theme . "/content";
 		//$data['cats'] = $this->products_model->get_cats();

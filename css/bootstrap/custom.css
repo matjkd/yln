@@ -1,3 +1,30 @@
+h1, h2 {
+	line-height:30px;
+}
+h3 {
+line-height: 20px;
+}
+#header {
+	padding-top:30px;
+	background:url('images/header.jpg') no-repeat;
+		background-size: cover;
+		height:auto;
+
+}
+#slider {
+padding: 30px 0;
+border-bottom: 6px solid #666;
+background: url('images/texture.jpg') rgb(37, 37, 37);
+}
+.breadcrumbs {
+background-color: rgba(0, 0, 0, 0.31);
+}
+#top-menu {
+	position:fixed;
+	width:100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index:2000000;
+}
 .hero-unit {
   padding: 10px 0;
 font-size: 14px;
@@ -38,4 +65,23 @@ line-height: 20px;
 	position:relative; 
 }	
 }
+
+.well {
+background-color: rgb(255, 255, 255);
+border-bottom: 1px solid rgb(204, 204, 204);
+border-left: 0px solid rgb(39, 144, 176);
+border-right: 1px solid rgb(204, 204, 204);
+border-top: 1px solid rgb(204, 204, 204);
+box-shadow: rgba(50, 50, 50, 0.14902) 0px 5px 12px;
+margin-bottom: 20px;
+min-height: 20px;
+padding: 19px;
+position: relative;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 0px;
+-webkit-box-shadow: rgba(50, 50, 50, 0.14902) 0px 5px 12px;
+}
+
 

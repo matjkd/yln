@@ -24,7 +24,7 @@
 		$data['column1'] = 8;
 		$data['column2'] = 4;
 		$data['sidebox'] = 'side';
-		
+		$data['title'] = 'Search Results';
 		$data['search'] = $this->input->post('search');
 		$data['results'] = $this->search_model->get_results($data['search']);
 		 $data['main_content'] = "global/bootstrap/searchresults";

@@ -67,6 +67,18 @@ class Members_model extends CI_Model {
 		}
 	}
 	
+		function list_members_main() {
+		$this -> db -> where('active', 1);
+		$this -> db -> where('main_address', 1);
+		$this -> db -> order_by('company_name');
+		$this -> db -> join('address', 'address.idcompany = company.idcompany', 'LEFT');
+		//$this->db -> group_by('company_name');
+		$query = $this -> db -> get('company');
+		if ($query -> num_rows > 0) {
+			return $query -> result();
+		}
+	}
+	
 	function get_economicProfiles($firmID) {
 		
 		$addresses = $this->list_addresses($firmID);

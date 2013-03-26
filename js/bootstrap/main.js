@@ -1,4 +1,11 @@
 $(document).ready(function(){
+	
+	
+	
+	
+	
+	
+	
 
     // Disable href="#" links
     $('a').click(function(){if ($(this).attr('href') == '#') {return false;}});
@@ -122,8 +129,8 @@ $(window).load(function() {
     $("#mainslider").flexslider({
 		animation: "slide",
         slideshow: true, // ***
-        useCSS: false,
-		controlNav: true,
+        useCSS: true,
+		controlNav: false,
 		animationLoop: true,
 		smoothHeight: true
 	});
