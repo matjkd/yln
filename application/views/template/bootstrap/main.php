@@ -120,17 +120,13 @@
             	
                 <section class="popular-posts">
                     <?php if(isset($sidebox) && $sidebox != NULL) { ?>
-                    	<div class="well ">
-                    		<a style="float: left;
-margin-right: 10px; width:150px;" href="http://www.laworld.com" target="_blank"><img src="<?=base_url()?>images/logo.png"/></a>
-                    		<p>YLN is closely affiliated to <a href="http://www.laworld.com" target="_blank">LAWorld</a>, an independent international legal network</p>
-                    		</div>
+                    
                     	
                     	
-                    	<div class="well">
+                    
                   
 					<?=$this -> load -> view('sidebox/' . $sidebox) ?>
-					</div>
+					
 					<? } ?>
                 </section>
             </aside>
@@ -143,12 +139,12 @@ margin-right: 10px; width:150px;" href="http://www.laworld.com" target="_blank">
     <div class="container">
         <div class="row">
             <div class="span4">
-                <p>Yangtzejiang Lawyers Network</p>
+                <p class="heading">Yangtzejiang Legal Network</p>
                 <address>
-                    <p><i class="icon-map-marker"></i> Street Name 432/2, London, 90210</p>
-                    <p><i class="icon-phone"></i> (123) 456-7890</p>
-                    <p><i class="icon-mobile-2"></i> (123) 456-7890</p>
-                    <p><i class="icon-mail-3"></i> <a href="mailto:#">info@email.com</a></p>
+                    <p><i class="icon-map-marker"></i> 21st Floor, United Centre, 95 Queensway, Hong Kong, CHINA</p>
+                    <p>tel: + 852 2523 9155</p>
+                    <p>fax: + 852 2810 6511</p>
+                    <p><i class="icon-envelope"></i> <a href="mailto:steveng@ngnshum.com">steveng@ngnshum.com</a></p>
                 </address>
             </div>
             <div class="span8">

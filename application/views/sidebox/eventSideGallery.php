@@ -1,6 +1,8 @@
 		<?php if($linked_gallery != NULL) {?>
 
-<?=$this->load->view('sidebox/sideGallery')?>
+<?=$this->load->view('sidebox/sideGallery2')?>
+
+
 
 <?php } ?>
 		

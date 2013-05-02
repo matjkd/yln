@@ -6,7 +6,7 @@
         <ul class="subnav">
            
             <li><?= anchor('/about-yln/gateway_to_china', lang('menu_gateway')) ?></li>
-           
+           <li><?= anchor('/about-yln/code_of_conduct', lang('menu_code')) ?></li>
               
         </ul>
     </li>
@@ -33,14 +33,14 @@
     </li>
 
     <?php
-    $is_logged_in = $this->session->userdata('is_logged_in');
-    $role = $this->session->userdata('role');
-    if ($is_logged_in != 0 || $role == 1) {
+		$is_logged_in = $this -> session -> userdata('is_logged_in');
+		$role = $this -> session -> userdata('role');
+		if ($is_logged_in != 0 || $role == 1)
+		{
 
-       
-         echo "<li>".anchor('admin', 'Admin')."</li>";
-         
-    }
+			echo "<li>" . anchor('admin', 'Admin') . "</li>";
+
+		}
     ?>
 
 </ul>

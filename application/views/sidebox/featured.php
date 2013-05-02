@@ -1,3 +1,10 @@
+<div class="well ">
+	                    		<a style="float: left;
+margin-right: 10px; width:150px;" href="http://www.laworld.com" target="_blank"><img src="<?=base_url()?>images/logo.png"/></a>
+                    		<p>YLN is closely affiliated to <a href="http://www.laworld.com" target="_blank">LAWorld</a>, an independent international legal network</p>
+                    		</div>
+
+<div class="well ">
 <div class="media">
       
        <?php foreach($random_firm as $row):?>
@@ -29,4 +36,4 @@
                         </div>
                         <?php endforeach; ?>
                     </div>
-	
+	</div>
