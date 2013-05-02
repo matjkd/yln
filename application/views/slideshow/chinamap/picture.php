@@ -28,7 +28,7 @@
                                     		
                                     		
                                     	<?php if($row2->region == $row->region_id) { ?>	
-                                        <li><a href="<?=base_url()?>laworldmembers/view_company/<?=$row2->idcompany?>"><?=$row2->company_name?></a></li>
+                                        <li><a href="<?=base_url()?>ylnmembers/view_company/<?=$row2->idcompany?>"><?=$row2->company_name?></a></li>
                                        <?php } ?>
                                         
                                         <?php endforeach; ?>
