@@ -13,7 +13,29 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon-57-precomposed.png"/>
-    <title>About Us Page</title>
+    
+
+<title><?php
+if (isset($metatitle) && $metatitle != NULL) {
+    echo $metatitle;
+} else {
+    if (isset($title) && $title != NULL) {
+        echo $title;
+    } else {
+        echo "YLN";
+    }
+}
+?></title>
+<meta name="description" content="<?php
+if (isset($meta_description) && $meta_description != NULL) {
+    echo $meta_description;
+} else {
+    echo "description";
+}
+?>">
+
+
+
     <link href="<?=base_url()?>css/bootstrap/bootstrap.css" type="text/css" rel="stylesheet"/>
     <link href="<?=base_url()?>css/bootstrap/style.css" type="text/css" rel="stylesheet"/>
         <link href="<?=base_url()?>css/bootstrap/custom.css" type="text/css" rel="stylesheet"/>
