@@ -44,6 +44,9 @@ h1, h2 {
 	
 	z-index: 99999;
 }
+#accordion2 {
+	min-height:655px;
+}
 
 .memberBox {
 	color: #ddd;
