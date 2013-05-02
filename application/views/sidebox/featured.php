@@ -21,7 +21,7 @@ margin-right: 10px; width:150px;" href="http://www.laworld.com" target="_blank">
                         </a>
                         <div class="media-body">
                         	 <h3  class="widget-title" style="margin-top:0px;">Featured Firm</h3>
-                            <h4 class="media-heading"><a href="<?=base_url() ?>laworldmembers/view_company/<?=$row->idcompany?>"><?=$row->company_name?></a></h4>
+                            <h4 class="media-heading"><a href="<?=base_url() ?>ylnmembers/view_company/<?=$row->idcompany?>"><?=$row->company_name?></a></h4>
                             <em><?=$row->country?></em>
                             <?php 
 			$descriptionTrim = str_replace("/<p>\s+<\/p>/","","$row->description");
