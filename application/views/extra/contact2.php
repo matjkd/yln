@@ -10,7 +10,7 @@ src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&am
         <div class="row">
             <section id="page-sidebar" class="pull-left span8">
                 <h3>Leave Your Message</h3>
-                <form name="contact" method="post" action="contact.html" class="af-form" id="af-form">
+               <?= form_open('email/send'); ?>
                     <div class="af-outer af-required pull-left">
                         <div class="af-inner">
                             <label for="name" id="name_label">Your Name:</label>
@@ -35,10 +35,16 @@ src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&am
                     </div>
                     <div class="af-outer af-required">
                         <div class="af-inner">
-                            <input type="submit" name="submit" class="form-button btn btn-primary btn-large" id="submit_btn" value="Send Message!" />
+                            <!-- <input type="submit" name="submit" class="form-button btn btn-primary btn-large" id="submit_btn" value="Send Message!" /> -->
+                            
+                            
+                            
+                            <button class="btn btn-primary btn-large"  name="submit" id="submit_btn" type="submit">
+			Send Message
+		</button>
                         </div>
                     </div>
-                </form>
+               <?=form_close()?>
             </section>
             <!--sidebar-->
             <aside id="sidebar" class="pull-right span4">

@@ -117,7 +117,8 @@ if (isset($meta_description) && $meta_description != NULL) {
 <section id="container">
     <div class="container">
     	
-    	
+    					<?=$this -> load -> view('extra/alert') ?>
+
                     <?= $this->load->view('slideshow/hero') ?>
         
     
