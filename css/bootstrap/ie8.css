@@ -1,0 +1,18 @@
+#header {
+	padding-top: 30px;
+	background: #4983da;
+	background-image:none;
+	
+	height: auto;
+}
+
+#chinaMap {
+display: none;
+
+}
+
+.heroMap {
+	height:700px;
+	background-image: url('images/chinaMapBackgroundIE.jpg') no-repeat;
+	background:url('images/chinaMapBackgroundIE.jpg') no-repeat;
+}

@@ -4,6 +4,9 @@
 
 
 <link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/chinamap.css">
+ <!--[if lt IE 8]>
+     <link href="<?=base_url()?>css/bootstrap/ie8.css" type="text/css" rel="stylesheet"/>
+    <![endif]-->
 
 	<div class="heroMap">
 	<div class="mapAccordion"  style="  ">
@@ -61,11 +64,12 @@
 	
 	
 	
-	
+
 
 </div>
 
 </div>
+
 
 
 

@@ -42,8 +42,12 @@ if (isset($meta_description) && $meta_description != NULL) {
     <link href="<?=base_url()?>css/bootstrap/prettyPhoto.css" type="text/css" rel="stylesheet"/>
     <link href="<?=base_url()?>css/bootstrap/font-icomoon.css" type="text/css" rel="stylesheet"/>
     <link href="<?=base_url()?>css/bootstrap/font-awesome.css" type="text/css" rel="stylesheet"/>
+    <!--[if lt IE 8]>
+     <link href="<?=base_url()?>css/bootstrap/ie8.css" type="text/css" rel="stylesheet"/>
+    <![endif]-->
+    
     <!--[if IE 7]>
-    <link rel="stylesheet" href="assets/css/font-awesome-ie7.css"/>
+    <link rel="stylesheet" href="<?=base_url()?>css/bootstrap/font-awesome-ie7.css"/>
     <![endif]-->
     
     <script>
@@ -63,24 +67,24 @@ if (isset($meta_description) && $meta_description != NULL) {
 	<input type="hidden" id="baseurl" value="<?= base_url() ?>"/>
 		 <?php $this->datestring = "%l %j%S %M  %Y %G:%i:%s";?>
 <!--top menu-->
-<section id="top-menu">
+<div id="top-menu">
     <div class="container">
         <div class="row">
             <div class="span3 hidden-phone">
                 
             </div>
             <div class="span9">
-               <nav id="menu" class="clearfix pull-right">
+               <div id="menu" class="clearfix pull-right">
                    <ul>
                    <?= $this->load->view('global/' . $this -> config_theme . '/menu') ?>
                    </ul>
-                </nav>
+                </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 <!--header-->
-<header id="header">
+<div id="header">
     <div class="container">
         <div class="row">
             <div class="span4 logo">
@@ -90,18 +94,18 @@ if (isset($meta_description) && $meta_description != NULL) {
               
             </div>
             <div class="span4 hidden-phone">
-                    <section class="search clearfix">
+                    <div class="search clearfix">
                         <form id="search" class="input-append" method="post" action="<?=base_url()?>search/results">
                             <input class="span4" id="appendedInputButton" size="16" type="text" value="Search..." name="search"
                                    onfocus="if(this.value=='Search...') this.value=''" onblur="if(this.value=='') this.value='Search...'"/>
                             <input class="btn search-bt" type="submit" name="submit" value="" />
                         </form>
-                    </section>
+                    </div>
                 </div>
         </div>
     </div>
     <!--page header / breadcrumbs-->
-<section class="breadcrumbs">
+<div class="breadcrumbs">
     <div class="container">
     	 <div class="page-header">
             <div class="row">
@@ -115,8 +119,8 @@ if (isset($meta_description) && $meta_description != NULL) {
             </div>
         </div>
     </div>
-</section>
-</header>
+</div>
+</div>
 
 
 <!--slideshow-->
@@ -125,7 +129,7 @@ if (isset($meta_description) && $meta_description != NULL) {
 
 
 <!--container-->
-<section id="container">
+<div id="container">
     <div class="container">
     	
     					<?=$this -> load -> view('extra/alert') ?>
@@ -144,15 +148,15 @@ if (isset($meta_description) && $meta_description != NULL) {
 		
 		?>
         <div class="row">
-            <section id="page" class="pull-left span<?=$col1?>">
+            <div id="page" class="pull-left span<?=$col1?>">
               	<?= $this -> load -> view($main_content) ?>
-            </section>
+            </div>
 
             <aside id="sidebar" class="pull-right span<?=$col2?>">
             	
             
             	
-                <section class="popular-posts">
+                <div class="popular-posts">
                     <?php if(isset($sidebox) && $sidebox != NULL) { ?>
                     
                     	
@@ -162,14 +166,14 @@ if (isset($meta_description) && $meta_description != NULL) {
 					<?=$this -> load -> view('sidebox/' . $sidebox) ?>
 					
 					<? } ?>
-                </section>
+                </div>
             </aside>
         </div>
     </div>
-</section>
+</div>
 
 <!--footer-->
-<footer id="footer">
+<div id="footer">
     <div class="container">
         <div class="row">
             <div class="span4">
@@ -204,10 +208,10 @@ if (isset($meta_description) && $meta_description != NULL) {
             </div>
         </div>
     </div>
-</footer>
+</div>
 
 <!--footer menu-->
-<section id="footer-menu">
+<div id="footer-menu">
     <div class="container">
         <div class="row">
             <div class="span4">
@@ -215,14 +219,12 @@ if (isset($meta_description) && $meta_description != NULL) {
             </div>
             <div class="span8 hidden-phone">
                 <ul class="pull-right">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Sitemap</a></li>
+                   
                 </ul>
             </div>
         </div>
     </div>
-</section>
+</div>
 
 <script type="text/javascript" src="<?=base_url()?>js/bootstrap/jquery.min.js"></script>
     <script type="text/javascript" src="<?=base_url()?>js/bootstrap/bootstrap.min.js"></script>
